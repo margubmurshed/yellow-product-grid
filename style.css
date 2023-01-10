@@ -84,15 +84,23 @@ main {
 }
 
 @media screen and (max-width: 576px) {
+  main {
+    padding: 20px 10px;
+  }
   .product-grid-info {
     flex-direction: column;
   }
+  .product-grid-info h1 {
+    font-size: 28px;
+  }
   .product-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .product-image button {
     opacity: 1;
+    font-size: 14px;
   }
 }
 
@@ -102,6 +110,15 @@ main {
   }
   .product-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .product-image button {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .product-image button {
     opacity: 1;
